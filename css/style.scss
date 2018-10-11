@@ -10,3 +10,25 @@ body{
     font-family: 'Raleway', sans-serif;
     color: $colorText;
 }
+
+//Search navbar
+.btn-search{
+    padding: .6rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.1);
+    cursor: pointer;
+}
+
+//Media Queries
+@media(min-width: 768px){
+    .btn-search{
+        padding: 0;
+        font-size: 1.4rem;
+        border-color: transparent;
+    }
+}
