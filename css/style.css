@@ -5,6 +5,41 @@ body {
   font-family: 'Raleway', sans-serif;
   color: #696969; }
 
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  padding: 1rem 2rem; }
+
+.btn:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.31); }
+
+.btn::after {
+  content: '\f35a';
+  font-family: 'Font Awesome 5 Free';
+  position: relative;
+  left: .5rem;
+  transition: all .2s ease; }
+
+.btn:hover::after {
+  left: 1rem;
+  transform: rotateZ(-360deg); }
+
+.btn-primary {
+  background-color: #2f8bca !important;
+  border-color: #21608c !important; }
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #256fa1 !important; }
+
+.btn-primary:active {
+  background-color: #1c5277 !important;
+  border-color: #12364e !important; }
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(47, 139, 202, 0.5) !important; }
+
 .btn-search {
   padding: .6rem 1rem;
   font-size: 1.25rem;
@@ -17,7 +52,7 @@ body {
   cursor: pointer; }
 
 .dropdown-menu {
-  border: 1px solid #337ab7;
+  border: 1px solid #2f8bca;
   border-top-width: 5px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); }
 

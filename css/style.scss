@@ -1,5 +1,5 @@
 // Patrones de color
-$Principal: #337ab7;
+$Principal: #2f8bca;
 $colorText: #696969;
 
 //Tipografia
@@ -9,6 +9,51 @@ html{
 body{
     font-family: 'Raleway', sans-serif;
     color: $colorText;
+}
+
+//General styles button
+.btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+}
+
+.btn:hover{
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.31);
+}
+
+.btn::after{
+    content: '\f35a';
+    font-family: 'Font Awesome 5 Free';
+    position: relative;
+    left: .5rem;
+    transition: all .2s ease;
+}
+
+.btn:hover::after{
+    left: 1rem;
+    transform: rotateZ(-360deg);
+}
+
+//Styles primary boton
+.btn-primary{
+    background-color: $Principal !important;
+    border-color: darken($Principal, 15%) !important;
+}
+
+.btn-primary:hover, .btn-primary:focus{
+    background-color: darken($Principal, 10%) !important;
+}
+
+.btn-primary:active{
+    background-color:  darken($Principal, 20%) !important;
+    border-color: darken($Principal, 30%) !important;
+}
+
+.btn-primary:focus{
+    box-shadow:  0 0 0 .2rem rgba($Principal, .5) !important;
 }
 
 //Search navbar
