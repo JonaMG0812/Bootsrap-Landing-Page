@@ -16,10 +16,32 @@ body {
   border-color: rgba(0, 0, 0, 0.1);
   cursor: pointer; }
 
+.dropdown-menu {
+  border: 1px solid #337ab7;
+  border-top-width: 5px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); }
+
+.dropdown-menu a i {
+  font-size: .85rem;
+  margin-right: .5rem; }
+
 @media (min-width: 768px) {
   .btn-search {
     padding: 0;
     font-size: 1.4rem;
-    border-color: transparent; } }
+    border-color: transparent; }
+
+  /*Styles Megamenu*/
+  .navbar .container {
+    position: relative; }
+
+  .mega-menu {
+    position: static; }
+
+  .mega-menu .dropdown-menu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: auto; } }
 
 /*# sourceMappingURL=style.css.map */
